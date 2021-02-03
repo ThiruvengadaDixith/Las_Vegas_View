@@ -104,6 +104,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         android:background="@drawable/custom_search_view"
         android:elevation="20dp"
+        tools:targetApi="Q"
+
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
