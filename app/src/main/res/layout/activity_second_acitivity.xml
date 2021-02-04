@@ -10,6 +10,8 @@
         android:id="@+id/background_imageview"
         android:layout_width="442dp"
         android:layout_height="916dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.265"
@@ -30,26 +32,34 @@
 
     <TextView
         android:id="@id/strat_textview"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
         android:layout_marginTop="460dp"
         android:fontFamily="@font/open_sans_bold"
         android:text="The STRAT Hotel,Casino &amp; Skypod"
         android:textColor="@color/white"
-        android:textSize="22sp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@id/Strat_subtitle"
         android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="14dp"
+        android:text="Top of the World is known as one of the
+most romantic restaurants in the city. It offers
+an intimate dining setting paired with
+an extravagant view of the entire city, all
+encompassed in 360-degree ..."
+        android:textColor="@color/white"
+        android:textSize="19sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/strat_textview" />
 
@@ -86,7 +96,9 @@
         android:rating="4.5"
         android:stepSize="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Strat_subtitle" />
+        app:layout_constraintTop_toBottomOf="@+id/Strat_subtitle"
+        tools:targetApi="Q"
+        />
 
     <ImageView
         android:id="@+id/imageView4"
