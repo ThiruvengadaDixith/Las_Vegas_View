@@ -34,8 +34,10 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header_imageview">
+        app:layout_constraintTop_toBottomOf="@+id/header_imageview"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,16 +45,124 @@
             android:orientation="vertical">
 
             <TextView
-                android:padding="10dp"
-                android:layout_marginTop="8dp"
                 android:id="@+id/hotel_name"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/open_sans_regular"
+                android:padding="10dp"
                 android:text="@string/the_strat_hotel_casino_amp_skypod"
                 android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+
+                <RatingBar
+                    android:id="@+id/textView8"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressTint="@color/colorAccent"
+                    android:rating="4.5"
+
+                    />
+
+                <TextView
+                    android:id="@+id/strat_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="@string/_491"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="@string/_591"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:padding="6dp"
+                android:id="@+id/About_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textSize="22sp"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/strat_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="@string/top_of_the_world_is_known_as_one_of_the_most_romantic_restaurants_in_the_city_it_offers_an_intimate_dining_setting_paired_with_an_extravagant_view_of_the_entire_city_all_encompassed_in_a_360_degree_revolving_frame_yes_that_s_right_this_restaurant_allows_diners_the_opportunity_to_see_las_vegas_in_its_entirety_if_they_re_able_to_stay_for_at_least_80_minutes_the_time_needed_for_one_full_rotation"
+                android:textColor="@color/black"
                 android:fontFamily="@font/open_sans_regular"
-                android:textSize="24sp"
-                 />
+                />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Venue Type"
+                android:textSize="22sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/open_sans_semi_bold"/>
+
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Restaurants"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:fontFamily="@font/open_sans_regular"/>
+
+            <TextView
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type of view " />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:padding="10dp"
+                android:fontFamily="@font/open_sans_regular"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="It might surprise you, but this is the only
+revolving restaurant in Las Vegas. Located
+844 feet in the air, you’re bound to get
+a great view of the city with its massive
+floor-to-ceiling windows." />
+
+
         </LinearLayout>
     </ScrollView>
 
