@@ -26,7 +26,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/open_sans_light"
         android:text="@string/one"
         android:textColor="@color/colorPrimary"
@@ -98,7 +98,7 @@
         android:id="@+id/searchView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="26dp"
         android:background="@drawable/custom_search_view"
         android:elevation="20dp"
         android:outlineSpotShadowColor="@color/colorPrimary"
@@ -118,7 +118,9 @@
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="@+id/searchView"
         app:layout_constraintTop_toBottomOf="@+id/searchView"
-        app:layout_constraintVertical_bias="0.51">
+        app:layout_constraintVertical_bias=".5"
+        android:layout_marginBottom="30dp"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -273,7 +275,9 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="360dp"
                 android:layout_height="240dp"
-                 android:layout_marginTop="18dp">
+                 android:layout_marginTop="18dp"
+
+                >
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
