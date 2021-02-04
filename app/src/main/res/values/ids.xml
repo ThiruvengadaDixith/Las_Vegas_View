@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="skybar_likes" type="id" />
+    <item name="pool_likes" type="id"></item>
+    <item name="Strat_subtitle" type="id" />
+</resources>

@@ -129,6 +129,7 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/strat_cardview"
                 android:layout_width="360dp"
                 android:layout_height="240dp">
 
@@ -137,7 +138,7 @@
                     android:layout_height="match_parent">
 
                     <View
-                        android:id="@+id/view"
+                        android:id="@+id/stratview"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/image_one"
@@ -149,7 +150,7 @@
                         app:layout_constraintVertical_bias="0.0" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@id/strat_textview"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
@@ -162,28 +163,28 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/textView7"
+                        android:id="@id/strat_rating"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:text="4.91"
                         android:textColor="@color/white"
-                        app:layout_constraintStart_toEndOf="@+id/ratingBar"
-                        app:layout_constraintTop_toTopOf="@+id/ratingBar" />
+                        app:layout_constraintStart_toEndOf="@+id/strat_ratingbar"
+                        app:layout_constraintTop_toTopOf="@+id/strat_ratingbar" />
 
                     <TextView
-                        android:id="@+id/textView8"
+                        android:id="@+id/strat_likes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:text="(561)"
                         android:textColor="@color/white"
                         android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/textView7"
-                        app:layout_constraintTop_toTopOf="@+id/textView7" />
+                        app:layout_constraintStart_toEndOf="@+id/strat_rating"
+                        app:layout_constraintTop_toTopOf="@+id/strat_rating" />
 
                     <RatingBar
-                        android:id="@+id/ratingBar"
+                        android:id="@id/strat_ratingbar"
                         style="@style/Widget.AppCompat.RatingBar.Small"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -194,23 +195,23 @@
                         android:rating="4.5"
                         android:stepSize="0.5"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+                        app:layout_constraintTop_toBottomOf="@+id/strat_textview" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/skybar_cardview"
                 android:layout_width="360dp"
                 android:layout_height="240dp"
-                android:layout_marginTop="18dp"
-                >
+                android:layout_marginTop="18dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <View
-                        android:id="@+id/view"
+                        android:id="@+id/skybar_view"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/image_two"
@@ -222,41 +223,41 @@
                         app:layout_constraintVertical_bias="1.0" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@id/strat_textview"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="132dp"
                         android:fontFamily="@font/open_sans_bold"
-                        android:text="The STRAT Hotel,Casino &amp; Skypod"
+                        android:text="Sky Bar at Waldorf Astoria"
                         android:textColor="@color/white"
                         android:textSize="22sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/textView7"
+                        android:id="@+id/strat_rating"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:text="4.91"
+                        android:text="4.51"
                         android:textColor="@color/white"
-                        app:layout_constraintStart_toEndOf="@+id/ratingBar"
-                        app:layout_constraintTop_toTopOf="@+id/ratingBar" />
+                        app:layout_constraintStart_toEndOf="@+id/strat_ratingbar"
+                        app:layout_constraintTop_toTopOf="@+id/strat_ratingbar" />
 
                     <TextView
-                        android:id="@+id/textView8"
+                        android:id="@+id/skybar_likes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:text="(561)"
+                        android:text="(751)"
                         android:textColor="@color/white"
                         android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/textView7"
-                        app:layout_constraintTop_toTopOf="@+id/textView7" />
+                        app:layout_constraintStart_toEndOf="@+id/strat_rating"
+                        app:layout_constraintTop_toTopOf="@+id/strat_rating" />
 
                     <RatingBar
-                        android:id="@+id/ratingBar"
+                        android:id="@+id/strat_ratingbar"
                         style="@style/Widget.AppCompat.RatingBar.Small"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -267,24 +268,24 @@
                         android:rating="4.5"
                         android:stepSize="0.5"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+                        app:layout_constraintTop_toBottomOf="@+id/strat_textview" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/pool_cardview"
                 android:layout_width="360dp"
                 android:layout_height="240dp"
-                 android:layout_marginTop="18dp"
 
-                >
+                android:layout_marginTop="18dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <View
-                        android:id="@+id/view"
+                        android:id="@+id/pool_view"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/image_three"
@@ -296,41 +297,41 @@
                         app:layout_constraintVertical_bias="0.0" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@id/strat_textview"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="132dp"
                         android:fontFamily="@font/open_sans_bold"
-                        android:text="The STRAT Hotel,Casino &amp; Skypod"
+                        android:text="Boulevard  pool at Cosmopolitan"
                         android:textColor="@color/white"
                         android:textSize="22sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/textView7"
+                        android:id="@id/strat_rating"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:text="4.91"
                         android:textColor="@color/white"
-                        app:layout_constraintStart_toEndOf="@+id/ratingBar"
-                        app:layout_constraintTop_toTopOf="@+id/ratingBar" />
+                        app:layout_constraintStart_toEndOf="@+id/strat_ratingbar"
+                        app:layout_constraintTop_toTopOf="@+id/strat_ratingbar" />
 
                     <TextView
-                        android:id="@+id/textView8"
+                        android:id="@id/strat_likes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:text="(561)"
+                        android:text="(801)"
                         android:textColor="@color/white"
                         android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/textView7"
-                        app:layout_constraintTop_toTopOf="@+id/textView7" />
+                        app:layout_constraintStart_toEndOf="@+id/strat_rating"
+                        app:layout_constraintTop_toTopOf="@+id/strat_rating" />
 
                     <RatingBar
-                        android:id="@+id/ratingBar"
+                        android:id="@id/strat_ratingbar"
                         style="@style/Widget.AppCompat.RatingBar.Small"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -341,7 +342,7 @@
                         android:rating="4.5"
                         android:stepSize="0.5"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+                        app:layout_constraintTop_toBottomOf="@+id/strat_textview" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
