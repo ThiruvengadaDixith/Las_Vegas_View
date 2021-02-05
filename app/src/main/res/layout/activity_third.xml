@@ -162,6 +162,24 @@ revolving restaurant in Las Vegas. Located
 a great view of the city with its massive
 floor-to-ceiling windows." />
 
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="14dp"
+                android:backgroundTint="@color/blue"
+                android:padding="18dp"
+                android:text="Check the RoadMap"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:cornerRadius="5dp"
+                app:icon="@drawable/ic_footsteps_silhouette_variant"
+                app:iconGravity="textEnd"
+                app:iconSize="40dp" />
+
 
         </LinearLayout>
     </ScrollView>
